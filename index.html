@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jeshwanth Sinha | Personal Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Jeshwanth Sinha | Portfolio</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION BAR -->
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar">
 
@@ -38,9 +39,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <div class="menu-icon" id="menuIcon">
-                <i class="fas fa-bars"></i>
-            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
         </nav>
     </header>
@@ -51,17 +53,16 @@
 
         <div class="hero-content">
 
-            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+            <p class="intro">HELLO, I'M</p>
 
-            <h1>Hello, I'm <span>Jeshwanth Sinha</span></h1>
+            <h1>Jeshwanth <span>Sinha</span></h1>
 
-            <h2>Student | Aspiring Technology Professional</h2>
+            <h2>Aspiring Developer & Tech Enthusiast</h2>
 
             <p class="hero-description">
-                I am a student passionate about technology, programming
-                and continuous learning. I enjoy exploring new ideas,
-                developing my technical knowledge and working on projects
-                that help me grow.
+                Exploring the world of technology through web development,
+                programming, and artificial intelligence.
+                Passionate about learning, creating, and building meaningful projects.
             </p>
 
             <div class="hero-buttons">
@@ -76,26 +77,46 @@
 
             </div>
 
+            <div class="social-links">
+
+                <a href="https://github.com/Jeshwanth-cyber"
+                    target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/jeshwanth-sinha-undefined-1ba9a1420/"
+                    target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:nainipandu3@gmail.com"
+                    aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
         </div>
 
 
-        <!-- PROFILE CARD -->
-        <div class="hero-visual">
+        <div class="hero-card">
 
-            <div class="profile-card">
+            <div class="profile-circle">
+                <span>JS</span>
+            </div>
 
-                <div class="profile-icon">
-                    <i class="fas fa-user"></i>
-                </div>
+            <h3>Jeshwanth Sinha</h3>
 
-                <h3>Jeshwanth Sinha</h3>
+            <p>Student | Developer | Learner</p>
 
-                <p>Student & Learner</p>
+            <div class="profile-line"></div>
 
-                <div class="profile-line"></div>
-
-                <span>Learning • Building • Growing</span>
-
+            <div class="profile-info">
+                <span><i class="fa-solid fa-code"></i> Web Development</span>
+                <span><i class="fa-solid fa-brain"></i> AI / ML</span>
+                <span><i class="fa-solid fa-lightbulb"></i> Innovation</span>
             </div>
 
         </div>
@@ -107,83 +128,61 @@
     <section id="about" class="section">
 
         <div class="section-heading">
-
-            <p>GET TO KNOW ME</p>
-
-            <h2>About Me</h2>
-
+            <p class="section-label">GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+            <p>A little introduction about myself.</p>
         </div>
 
 
         <div class="about-container">
 
-            <div class="about-text">
-
-                <h3>A Little About Myself</h3>
-
-                <p>
-                    Hello! I am Jeshwanth Sinha. I am a student interested
-                    in technology, innovation and problem-solving.
-                    I believe that learning is a continuous process
-                    and every new experience helps me improve.
-                </p>
-
-                <p>
-                    I enjoy exploring programming, understanding how
-                    digital technologies work and developing practical
-                    skills through academic and personal projects.
-                </p>
-
-                <p>
-                    My goal is to continuously improve my knowledge,
-                    gain practical experience and build a successful
-                    career in the technology field.
-                </p>
-
-                <a href="#contact" class="text-link">
-                    Let's Connect
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-
+            <div class="about-image">
+                <div class="about-icon">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
             </div>
 
 
-            <div class="about-details">
+            <div class="about-content">
 
-                <div class="detail-card">
+                <h3>Hello! I'm Jeshwanth.</h3>
 
-                    <i class="fas fa-graduation-cap"></i>
+                <p>
+                    I am an aspiring developer with an interest in technology,
+                    programming, and artificial intelligence.
+                    I enjoy exploring new tools, developing technical skills,
+                    and working on projects that solve real-world problems.
+                </p>
+
+                <p>
+                    My current learning interests include web development,
+                    Python programming, and AI/ML fundamentals.
+                    I believe in continuous learning and improving my skills
+                    through practical experience.
+                </p>
+
+                <div class="about-details">
 
                     <div>
-                        <h4>Education</h4>
-                        <p>[Add college, course and year of study]</p>
+                        <strong>Name:</strong>
+                        <span>Jeshwanth Sinha</span>
+                    </div>
+
+                    <div>
+                        <strong>Email:</strong>
+                        <span>nainipandu3@gmail.com</span>
+                    </div>
+
+                    <div>
+                        <strong>Interests:</strong>
+                        <span>Technology, AI/ML, Web Development</span>
                     </div>
 
                 </div>
 
-
-                <div class="detail-card">
-
-                    <i class="fas fa-lightbulb"></i>
-
-                    <div>
-                        <h4>Interests</h4>
-                        <p>[Add personal and technical interests]</p>
-                    </div>
-
-                </div>
-
-
-                <div class="detail-card">
-
-                    <i class="fas fa-bullseye"></i>
-
-                    <div>
-                        <h4>Career Goals</h4>
-                        <p>[Add learning goals and career aspirations]</p>
-                    </div>
-
-                </div>
+                <a href="#contact" class="btn primary-btn">
+                    Let's Connect
+                </a>
 
             </div>
 
@@ -193,17 +192,15 @@
 
 
     <!-- SKILLS SECTION -->
-    <section id="skills" class="section light-section">
+    <section id="skills" class="section soft-section">
 
         <div class="section-heading">
 
-            <p>WHAT I CAN DO</p>
+            <p class="section-label">WHAT I KNOW</p>
 
-            <h2>My Skills</h2>
+            <h2>My <span>Skills</span></h2>
 
-            <span>
-                Skills I have developed and continue to improve.
-            </span>
+            <p>Technologies and tools I am learning and working with.</p>
 
         </div>
 
@@ -211,56 +208,57 @@
         <div class="skills-container">
 
 
-            <!-- PROGRAMMING SKILLS -->
+            <!-- Programming Languages -->
             <div class="skill-card">
 
                 <div class="skill-icon">
-                    <i class="fas fa-code"></i>
+                    <i class="fa-solid fa-code"></i>
                 </div>
 
                 <h3>Programming Languages</h3>
 
-                <ul>
-                    <li>[Programming Language 1]</li>
-                    <li>[Programming Language 2]</li>
-                    <li>[Programming Language 3]</li>
-                </ul>
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Python</span>
+                </div>
 
             </div>
 
 
-            <!-- TECHNICAL SKILLS -->
+            <!-- Technical Skills -->
             <div class="skill-card">
 
                 <div class="skill-icon">
-                    <i class="fas fa-laptop-code"></i>
+                    <i class="fa-solid fa-laptop-code"></i>
                 </div>
 
                 <h3>Technical Skills</h3>
 
-                <ul>
-                    <li>[Technical Skill 1]</li>
-                    <li>[Technical Skill 2]</li>
-                    <li>[Technical Skill 3]</li>
-                </ul>
+                <div class="skill-tags">
+                    <span>Web Development</span>
+                    <span>AI/ML Fundamentals</span>
+                    <span>GitHub</span>
+                </div>
 
             </div>
 
 
-            <!-- OTHER SKILLS -->
+            <!-- Tools -->
             <div class="skill-card">
 
                 <div class="skill-icon">
-                    <i class="fas fa-users"></i>
+                    <i class="fa-solid fa-toolbox"></i>
                 </div>
 
-                <h3>Other Skills</h3>
+                <h3>Tools & Platforms</h3>
 
-                <ul>
-                    <li>Communication</li>
-                    <li>Problem Solving</li>
-                    <li>Team Collaboration</li>
-                </ul>
+                <div class="skill-tags">
+                    <span>VS Code</span>
+                    <span>GitHub</span>
+                    <span>Canva</span>
+                    <span>Lovable</span>
+                </div>
 
             </div>
 
@@ -274,13 +272,11 @@
 
         <div class="section-heading">
 
-            <p>MY WORK</p>
+            <p class="section-label">MY WORK</p>
 
-            <h2>Projects</h2>
+            <h2>Featured <span>Projects</span></h2>
 
-            <span>
-                A collection of my academic and personal projects.
-            </span>
+            <p>A collection of projects and ideas I have worked on.</p>
 
         </div>
 
@@ -291,23 +287,34 @@
             <!-- PROJECT 1 -->
             <div class="project-card">
 
-                <div class="project-number">01</div>
-
                 <div class="project-icon">
-                    <i class="fas fa-globe"></i>
+                    <i class="fa-solid fa-shield-halved"></i>
                 </div>
 
-                <h3>[Project Name One]</h3>
+                <div class="project-content">
 
-                <p>
-                    [Write a short description of your first project.
-                    Explain its purpose, the problem it addresses
-                    and what you contributed.]
-                </p>
+                    <span class="project-number">PROJECT 01</span>
 
-                <div class="project-tags">
-                    <span>[Technology 1]</span>
-                    <span>[Technology 2]</span>
+                    <h3>SafeVaani</h3>
+
+                    <p>
+                        An AI-powered digital safety platform concept designed
+                        to help users identify potential online threats and
+                        improve their digital security.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>Web Development</span>
+                        <span>Cybersecurity</span>
+                    </div>
+
+                    <a href="https://github.com/Jeshwanth-cyber"
+                        target="_blank" rel="noopener noreferrer"
+                        class="project-link">
+                        Explore Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
                 </div>
 
             </div>
@@ -316,25 +323,38 @@
             <!-- PROJECT 2 -->
             <div class="project-card">
 
-                <div class="project-number">02</div>
-
                 <div class="project-icon">
-                    <i class="fas fa-laptop"></i>
+                    <i class="fa-solid fa-lightbulb"></i>
                 </div>
 
-                <h3>[Project Name Two]</h3>
+                <div class="project-content">
 
-                <p>
-                    [Write a short description of your second project.
-                    Mention the technologies used and its main features.]
-                </p>
+                    <span class="project-number">PROJECT 02</span>
 
-                <div class="project-tags">
-                    <span>[Technology 1]</span>
-                    <span>[Technology 2]</span>
+                    <h3>Project Name</h3>
+
+                    <p>
+                        Add the name and description of your second project here.
+                        Explain its purpose, the problem it solves, and the
+                        technologies used to develop it.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Technology</span>
+                        <span>Development</span>
+                        <span>Innovation</span>
+                    </div>
+
+                    <a href="https://github.com/Jeshwanth-cyber"
+                        target="_blank" rel="noopener noreferrer"
+                        class="project-link">
+                        View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
                 </div>
 
             </div>
+
 
         </div>
 
@@ -342,17 +362,15 @@
 
 
     <!-- ACHIEVEMENTS SECTION -->
-    <section id="achievements" class="section light-section">
+    <section id="achievements" class="section soft-section">
 
         <div class="section-heading">
 
-            <p>MY JOURNEY</p>
+            <p class="section-label">MY JOURNEY</p>
 
-            <h2>Achievements</h2>
+            <h2>Achievements & <span>Participation</span></h2>
 
-            <span>
-                Milestones and experiences from my learning journey.
-            </span>
+            <p>Learning experiences and opportunities.</p>
 
         </div>
 
@@ -360,49 +378,56 @@
         <div class="achievement-container">
 
 
+            <!-- CERTIFICATIONS -->
             <div class="achievement-card">
 
-                <i class="fas fa-certificate"></i>
-
-                <div>
-                    <h3>Certifications</h3>
-
-                    <p>
-                        [Add certifications and completed courses.]
-                    </p>
+                <div class="achievement-icon">
+                    <i class="fa-solid fa-certificate"></i>
                 </div>
+
+                <h3>Certifications</h3>
+
+                <p>
+                    Add your completed courses, certifications,
+                    and technical learning programs here.
+                </p>
 
             </div>
 
 
+            <!-- AWARDS -->
             <div class="achievement-card">
 
-                <i class="fas fa-trophy"></i>
-
-                <div>
-                    <h3>Awards</h3>
-
-                    <p>
-                        [Add academic awards or recognitions, if applicable.]
-                    </p>
+                <div class="achievement-icon">
+                    <i class="fa-solid fa-trophy"></i>
                 </div>
+
+                <h3>Awards & Recognition</h3>
+
+                <p>
+                    Add any awards, recognitions, or accomplishments here.
+                </p>
 
             </div>
 
 
+            <!-- PARTICIPATION -->
             <div class="achievement-card">
 
-                <i class="fas fa-users"></i>
-
-                <div>
-                    <h3>Participation</h3>
-
-                    <p>
-                        [Add hackathons, workshops, competitions or events.]
-                    </p>
+                <div class="achievement-icon">
+                    <i class="fa-solid fa-people-group"></i>
                 </div>
 
+                <h3>Participation</h3>
+
+                <p>
+                    Participated in MLH Hackathon and IoT workshops,
+                    gaining exposure to collaborative learning,
+                    problem-solving, and emerging technologies.
+                </p>
+
             </div>
+
 
         </div>
 
@@ -410,65 +435,68 @@
 
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section">
 
         <div class="section-heading">
 
-            <p>GET IN TOUCH</p>
+            <p class="section-label">GET IN TOUCH</p>
 
-            <h2>Contact Me</h2>
+            <h2>Let's <span>Connect</span></h2>
 
-            <span>
-                Feel free to connect with me professionally.
-            </span>
+            <p>Feel free to reach out for collaboration or opportunities.</p>
 
         </div>
 
 
-        <div class="contact-card">
+        <div class="contact-container">
 
 
-            <!-- EMAIL -->
-            <a href="mailto:nainipandu3@gmail.com" class="contact-item">
+            <div class="contact-card">
 
-                <i class="fas fa-envelope"></i>
-
-                <div>
-                    <h3>Email</h3>
-                    <p>nainipandu3@gmail.com</p>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
                 </div>
 
-            </a>
+                <h3>Email</h3>
+
+                <a href="mailto:nainipandu3@gmail.com">
+                    nainipandu3@gmail.com
+                </a>
+
+            </div>
 
 
-            <!-- GITHUB -->
-            <a href="https://github.com/Jeshwanth-cyber"
-                target="_blank" rel="noopener noreferrer"
-                class="contact-item">
+            <div class="contact-card">
 
-                <i class="fab fa-github"></i>
-
-                <div>
-                    <h3>GitHub</h3>
-                    <p>github.com/Jeshwanth-cyber</p>
+                <div class="contact-icon">
+                    <i class="fa-brands fa-linkedin"></i>
                 </div>
 
-            </a>
+                <h3>LinkedIn</h3>
+
+                <a href="https://www.linkedin.com/in/jeshwanth-sinha-undefined-1ba9a1420/"
+                    target="_blank" rel="noopener noreferrer">
+                    Visit Profile
+                </a>
+
+            </div>
 
 
-            <!-- LINKEDIN -->
-            <a href="https://www.linkedin.com/in/jeshwanth-sinha-undefined-1ba9a1420/"
-                target="_blank" rel="noopener noreferrer"
-                class="contact-item">
+            <div class="contact-card">
 
-                <i class="fab fa-linkedin"></i>
-
-                <div>
-                    <h3>LinkedIn</h3>
-                    <p>Jeshwanth Sinha - LinkedIn Profile</p>
+                <div class="contact-icon">
+                    <i class="fa-brands fa-github"></i>
                 </div>
 
-            </a>
+                <h3>GitHub</h3>
+
+                <a href="https://github.com/Jeshwanth-cyber"
+                    target="_blank" rel="noopener noreferrer">
+                    Visit GitHub
+                </a>
+
+            </div>
+
 
         </div>
 
@@ -478,35 +506,37 @@
     <!-- FOOTER -->
     <footer>
 
-        <div class="footer-logo">JS.</div>
+        <div class="footer-content">
 
-        <p>Designed and developed by Jeshwanth Sinha</p>
+            <a href="#home" class="footer-logo">JS<span>.</span></a>
 
-        <div class="social-links">
+            <p>
+                Designed and developed by Jeshwanth Sinha.
+            </p>
 
-            <a href="https://github.com/Jeshwanth-cyber"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-            </a>
+            <div class="footer-socials">
 
-            <a href="https://www.linkedin.com/in/jeshwanth-sinha-undefined-1ba9a1420/"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
-            </a>
+                <a href="https://github.com/Jeshwanth-cyber"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
 
-            <a href="mailto:nainipandu3@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
+                <a href="https://www.linkedin.com/in/jeshwanth-sinha-undefined-1ba9a1420/"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:nainipandu3@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+            <p class="copyright">
+                © <span id="year"></span> Jeshwanth Sinha. All rights reserved.
+            </p>
 
         </div>
-
-        <p class="copyright">
-            © 2026 Jeshwanth Sinha. All Rights Reserved.
-        </p>
-
-        <a href="#home" class="back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </a>
 
     </footer>
 
