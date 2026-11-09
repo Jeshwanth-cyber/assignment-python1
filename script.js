@@ -1,38 +1,26 @@
-// ===============================
 // MOBILE NAVIGATION
-// ===============================
 
-const menuIcon = document.getElementById("menuIcon");
-
+const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
-
-menuIcon.addEventListener("click", function () {
+menuToggle.addEventListener("click", function () {
 
     navLinks.classList.toggle("active");
 
-    const icon = menuIcon.querySelector("i");
+    const isOpen = navLinks.classList.contains("active");
 
-    if (navLinks.classList.contains("active")) {
+    menuToggle.setAttribute("aria-expanded", isOpen);
 
-        icon.classList.remove("fa-bars");
-
-        icon.classList.add("fa-xmark");
-
+    if (isOpen) {
+        menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     } else {
-
-        icon.classList.remove("fa-xmark");
-
-        icon.classList.add("fa-bars");
-
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
     }
 
 });
 
 
-// ===============================
-// CLOSE MENU AFTER CLICKING LINK
-// ===============================
+// CLOSE NAVIGATION AFTER CLICKING A LINK
 
 document.querySelectorAll(".nav-links a").forEach(function (link) {
 
@@ -40,26 +28,31 @@ document.querySelectorAll(".nav-links a").forEach(function (link) {
 
         navLinks.classList.remove("active");
 
-        const icon = menuIcon.querySelector("i");
+        menuToggle.setAttribute("aria-expanded", "false");
 
-        icon.classList.remove("fa-xmark");
-
-        icon.classList.add("fa-bars");
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
 
     });
 
 });
 
 
-// ===============================
+// AUTOMATIC FOOTER YEAR
+
+const yearElement = document.getElementById("year");
+
+yearElement.textContent = new Date().getFullYear();
+
+
 // SCROLL REVEAL ANIMATION
-// ===============================
 
-const elements = document.querySelectorAll(
-
-    ".section-heading, .about-text, .detail-card, .skill-card, .project-card, .achievement-card, .contact-card"
-
+const revealElements = document.querySelectorAll(
+    ".section-heading, .about-container, .skill-card, .project-card, .achievement-card, .contact-card"
 );
+
+revealElements.forEach(function (element) {
+    element.classList.add("reveal");
+});
 
 
 const observer = new IntersectionObserver(function (entries) {
@@ -68,7 +61,7 @@ const observer = new IntersectionObserver(function (entries) {
 
         if (entry.isIntersecting) {
 
-            entry.target.classList.add("show");
+            entry.target.classList.add("active");
 
             observer.unobserve(entry.target);
 
@@ -77,16 +70,10 @@ const observer = new IntersectionObserver(function (entries) {
     });
 
 }, {
-
-    threshold: 0.15
-
+    threshold: 0.12
 });
 
 
-elements.forEach(function (element) {
-
-    element.classList.add("reveal");
-
+revealElements.forEach(function (element) {
     observer.observe(element);
-
 });
