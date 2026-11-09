@@ -1,7 +1,11 @@
+// ===============================
 // MOBILE NAVIGATION
+// ===============================
 
 const menuIcon = document.getElementById("menuIcon");
+
 const navLinks = document.getElementById("navLinks");
+
 
 menuIcon.addEventListener("click", function () {
 
@@ -10,17 +14,25 @@ menuIcon.addEventListener("click", function () {
     const icon = menuIcon.querySelector("i");
 
     if (navLinks.classList.contains("active")) {
+
         icon.classList.remove("fa-bars");
+
         icon.classList.add("fa-xmark");
+
     } else {
+
         icon.classList.remove("fa-xmark");
+
         icon.classList.add("fa-bars");
+
     }
 
 });
 
 
-// CLOSE MENU AFTER CLICKING A LINK
+// ===============================
+// CLOSE MENU AFTER CLICKING LINK
+// ===============================
 
 document.querySelectorAll(".nav-links a").forEach(function (link) {
 
@@ -31,6 +43,7 @@ document.querySelectorAll(".nav-links a").forEach(function (link) {
         const icon = menuIcon.querySelector("i");
 
         icon.classList.remove("fa-xmark");
+
         icon.classList.add("fa-bars");
 
     });
@@ -38,11 +51,16 @@ document.querySelectorAll(".nav-links a").forEach(function (link) {
 });
 
 
+// ===============================
 // SCROLL REVEAL ANIMATION
+// ===============================
 
 const elements = document.querySelectorAll(
+
     ".section-heading, .about-text, .detail-card, .skill-card, .project-card, .achievement-card, .contact-card"
+
 );
+
 
 const observer = new IntersectionObserver(function (entries) {
 
@@ -52,12 +70,16 @@ const observer = new IntersectionObserver(function (entries) {
 
             entry.target.classList.add("show");
 
+            observer.unobserve(entry.target);
+
         }
 
     });
 
 }, {
+
     threshold: 0.15
+
 });
 
 
